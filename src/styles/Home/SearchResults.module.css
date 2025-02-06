@@ -1,0 +1,101 @@
+.result_item {
+  position: relative;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.type_label {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 0.9;
+}
+
+.restaurant_type {
+  background-color: #3498db;
+  color: white;
+}
+
+.product_type {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.category_type {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.result_logo {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: #f4f4f4;
+}
+
+.logo_image {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.result_details {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.result_title {
+  text-align: start;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.result_meta {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.product_count {
+  font-size: small;
+  color: #888;
+}
+
+.restaurant .result_title {
+  color: #2c3e50;
+}
+
+.restaurant .result_meta span {
+  background-color: #f1f1f1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.price {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+.category .result_title {
+  color: #34495e;
+  width: 100%;
+}
+
+.category .result_details {
+  align-items: end;
+}
+
+.no_results {
+  text-align: center;
+  color: #7f8c8d;
+}

@@ -1,0 +1,83 @@
+.social {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.gridContainer {
+  position: relative;
+}
+
+.gridContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.46);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--var-primary-color);
+  max-width: 32rem;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.gridContainer:hover::before,
+.overlay:hover ~ .gridContainer::before {
+  opacity: 1;
+}
+
+.gridContainer:hover .overlay,
+.overlay:hover {
+  display: block;
+}
+
+.overlay p {
+  margin-bottom: 2rem;
+}
+
+.insta_link {
+  color: #eceef6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .social {
+    margin-top: 0;
+  }
+
+  .gridContainer::before {
+    opacity: 1;
+  }
+
+  .overlay {
+    min-width: 200px;
+    display: block;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+  .gridContainer::before {
+    opacity: 1;
+  }
+
+  .overlay {
+    display: block;
+    padding: 2rem;
+  }
+}

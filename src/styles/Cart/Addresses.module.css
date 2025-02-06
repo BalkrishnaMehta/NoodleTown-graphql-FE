@@ -1,0 +1,72 @@
+.address_selection {
+  cursor: pointer;
+  width: 18rem;
+  border: 2px solid gray;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+}
+
+.selected_address {
+  border-color: var(--var-primary-color);
+}
+
+.address_content {
+  text-align: justify;
+  gap: 0.4rem;
+}
+
+.radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+}
+
+.radio:checked {
+  border-color: var(--var-primary-color);
+}
+
+.radio:checked::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--var-primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio:hover {
+  border-color: var(--var-primary-color);
+}
+
+.default_badge,
+.last_used_badge {
+  font-size: x-small;
+  background-color: grey;
+  color: white;
+  padding: 2px 4px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.last_used_badge {
+  background-color: #4cc9fe;
+}
+
+@media screen and (max-width: 700px) {
+  .address_selection {
+    width: 100%;
+  }
+}

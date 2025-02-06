@@ -1,0 +1,70 @@
+.grid {
+  transform: scale(0.98);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1), -4px 0 4px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 11.125rem;
+  border-bottom-right-radius: 11.125rem;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-areas:
+    ". . . mobile mobile mobile"
+    "title title . mobile mobile mobile"
+    "playstore appstore . mobile mobile mobile"
+    ". . . mobile mobile mobile";
+  gap: 2rem;
+}
+
+.title {
+  grid-area: title;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.playstore {
+  grid-area: playstore;
+}
+
+.appstore {
+  grid-area: appstore;
+}
+
+.mobile {
+  grid-area: mobile;
+  border-bottom-right-radius: 6rem;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    grid-template-areas:
+      "mobile"
+      "title"
+      "playstore"
+      "appstore";
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .playstore,
+  .appstore {
+    width: 6rem;
+    margin: 0 auto;
+  }
+
+  .mobile {
+    margin: 0 auto;
+    width: 12rem;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+  .title {
+    font-size: 1.6rem;
+  }
+}

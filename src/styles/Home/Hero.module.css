@@ -1,0 +1,50 @@
+.hero {
+  background: url("../../assets/hero.png") no-repeat center center/cover;
+  height: 70vh;
+  position: relative;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.46;
+  background-color: black;
+}
+
+.hero * {
+  z-index: 1;
+}
+
+.hero_content {
+  padding: 0 4rem;
+  flex: auto;
+}
+
+.hero_heading {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.hero_para {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero_heading {
+    font-size: 2rem;
+  }
+
+  .hero_para {
+    font-size: 1rem;
+  }
+}

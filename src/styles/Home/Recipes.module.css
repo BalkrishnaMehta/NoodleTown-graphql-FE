@@ -1,0 +1,42 @@
+.content {
+  width: 100%;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -50px;
+  left: 0;
+  background: url("../../assets/recipieLeft.png") no-repeat left top;
+  background-size: 100px 150px;
+  z-index: -1;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -50px;
+  right: 0;
+  background: url("../../assets/recipieRight.png") no-repeat right top;
+  background-size: 100px 150px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+  .content::after,
+  .content::before {
+    background-size: 50px 100px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 850px) {
+  .content::after,
+  .content::before {
+    background-size: 75px 125px;
+  }
+}

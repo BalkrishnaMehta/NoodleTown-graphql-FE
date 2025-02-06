@@ -1,0 +1,75 @@
+.auth_container {
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.auth_box {
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.toggle_btn {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  color: #666;
+}
+
+.active_tab_indicator {
+  height: 2px;
+  width: 80px;
+  background-color: var(--var-primary-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.form_group {
+  position: relative;
+}
+
+.form_group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form_group input:focus {
+  outline: none;
+  border-color: var(--var-primary-color);
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+}
+
+@media (max-width: 480px) {
+  .auth_box {
+    padding: 1.5rem;
+  }
+
+  .toggle_buttons {
+    margin-bottom: 1.5rem;
+  }
+
+  .form {
+    gap: 1rem;
+  }
+}

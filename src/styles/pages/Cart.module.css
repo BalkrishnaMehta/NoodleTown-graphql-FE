@@ -1,0 +1,18 @@
+.cart_layout {
+  display: flex;
+}
+
+.cart {
+  flex-grow: 2;
+  flex-basis: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .cart_layout {
+    flex-direction: column-reverse;
+  }
+  .cart {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+}

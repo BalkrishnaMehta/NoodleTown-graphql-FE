@@ -1,0 +1,27 @@
+.divider {
+  height: 0.1rem;
+  width: 10rem;
+  background-color: var(--var-primary-color);
+}
+
+.circular_card img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.brand_title {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+  .circular_card img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .brand_title {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,39 @@
+.orderRow {
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.orderID {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.orderStatus {
+  font-weight: 500;
+  color: #4caf50;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: #e6f4ea;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.orderTotal {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.noOrders {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

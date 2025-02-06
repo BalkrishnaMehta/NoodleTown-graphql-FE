@@ -1,0 +1,64 @@
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.productCard {
+  background-color: #f4f6f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.cardImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  background-color: #f0f0f0;
+}
+
+.productDetails {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.75rem 0;
+}
+
+.productDescription {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.vegTag,
+.nonVegTag {
+  padding: 0.25rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.vegTag {
+  background-color: #e6f2e6;
+  color: #2e7d32;
+}
+
+.nonVegTag {
+  background-color: #f2e6e6;
+  color: #d32f2f;
+}
+
+.noProductsMessage {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+  font-size: 1.2rem;
+}

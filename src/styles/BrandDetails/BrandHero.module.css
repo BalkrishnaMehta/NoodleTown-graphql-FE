@@ -1,0 +1,50 @@
+.logo {
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.data div p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #999999;
+  line-height: 1.7rem;
+}
+
+.cost {
+  color: black;
+  font-weight: 400;
+}
+
+.shop_indicator {
+  color: red;
+}
+
+.btns {
+  margin-top: 2rem;
+}
+
+.btns > * {
+  flex: 1;
+  width: 100%;
+}
+
+.btns > * > * {
+  width: 100%;
+}
+
+.skeleton_heading_bottom {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    gap: 0rem;
+    align-items: center;
+  }
+
+  .btns {
+    gap: 1rem !important;
+  }
+}

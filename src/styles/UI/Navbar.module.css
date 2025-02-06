@@ -1,0 +1,44 @@
+.nav {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart span {
+  background-color: var(--var-primary-color);
+  color: #ffffff;
+  position: absolute;
+  top: -12px;
+  right: -8px;
+  height: 1rem;
+  width: 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+
+  .nav ul {
+    gap: 2rem;
+  }
+}

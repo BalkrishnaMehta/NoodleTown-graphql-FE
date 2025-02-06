@@ -1,0 +1,82 @@
+.form {
+  width: 100%;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.form_group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group input[type="password"],
+.form_group input[type="text"],
+.form_group input[type="email"],
+.form_group input[type="number"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form_group input[type="password"]:focus,
+.form_group input[type="text"]:focus,
+.form_group input[type="email"]:focus,
+.form_group input[type="number"]:focus {
+  border-color: var(--var-primary-color);
+}
+
+.form_group input::placeholder {
+  color: #888;
+}
+
+.form_group label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.form_group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+}
+
+@media (max-width: 600px) {
+  .form {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .form h2 {
+    font-size: 1.25rem;
+  }
+
+  .form_group input,
+  .form_group label {
+    font-size: 0.875rem;
+  }
+}

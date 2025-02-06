@@ -1,0 +1,22 @@
+.coupon_form {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.coupon_grp input {
+  width: 70%;
+  padding: 0.8rem 1.2rem;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 0.2rem;
+  border: 2px solid transparent;
+}
+
+.coupon_grp input:focus {
+  outline: none;
+  border-color: #ffa500;
+}
+
+.coupon_grp button {
+  width: 30% !important;
+}
