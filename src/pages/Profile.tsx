@@ -2,7 +2,7 @@ import { PrimaryButton, SecondaryButton } from "../components/UI/Button";
 import UpdatePassword from "../components/forms/UpdatePassword";
 import Navbar from "../components/UI/Navbar";
 import { Link } from "react-router-dom";
-import styles from "../styles/Profile/Profile.module.css";
+import styles from "../styles/pages/Profile.module.css";
 import Skeleton from "react-loading-skeleton";
 import Spinner from "../components/UI/Spinner";
 import { useMutation, useQuery } from "@apollo/client";

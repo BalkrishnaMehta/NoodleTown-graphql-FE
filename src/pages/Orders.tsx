@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../components/UI/Navbar";
 import Order from "../models/Order";
 import { motion } from "framer-motion";
-import styles from "../styles/Orders/Orders.module.css";
+import styles from "../styles/pages/Orders.module.css";
 import { useEffect } from "react";
 import errorToasting from "../utils/errorToasting";
 import Skeleton from "react-loading-skeleton";

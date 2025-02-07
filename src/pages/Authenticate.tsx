@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "../styles/Forms/Authentication.module.css";
+import styles from "../styles/pages/Authenticate.module.css";
 import Login from "../components/forms/Login";
 import SignUp from "../components/forms/SignUp";
 import { motion, AnimatePresence } from "framer-motion";

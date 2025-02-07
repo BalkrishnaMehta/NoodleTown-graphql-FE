@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Navbar from "../components/UI/Navbar";
 import ProductCartActions from "../components/BrandDetails/ProductCartActions";
 
-import styles from "../styles/BrandDetails/ProductDetail.module.css";
+import styles from "../styles/pages/ProductDetail.module.css";
 import Image from "../components/UI/Image";
 import errorToasting from "../utils/errorToasting";
 import Skeleton from "react-loading-skeleton";
